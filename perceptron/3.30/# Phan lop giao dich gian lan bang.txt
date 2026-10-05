@@ -1,0 +1,41 @@
+# Phan lop giao dich gian lan bang Perceptron
+
+## 1. Gioi thieu
+
+Du an su dung thuat toan Perceptron de phan loai
+giao dich thanh hai lop:
+
+- 0: Khong gian lan
+- 1: Gian lan
+
+## 2. Du lieu
+
+Du lieu gom cac dac trung:
+
+- so_tien
+- so_lan_giao_dich
+- khoang_cach
+- thoi_gian
+
+Nhan can du doan la gian_lan.
+
+## 3. Phuong phap
+
+- Chia du lieu thanh tap train va test
+- Chuan hoa du lieu
+- Huan luyen mo hinh Perceptron
+- Du doan tren tap test
+
+## 4. Danh gia
+
+Mo hinh duoc danh gia bang:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+
+## 5. Ket luan
+
+Perceptron duoc su dung de giai quyet bai toan
+phan lop nhi phan giao dich gian lan.
