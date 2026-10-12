@@ -1,0 +1,42 @@
+# Logistic Regression: Tự cài đặt và sử dụng thư viện
+
+## 1. Mục tiêu
+So sánh hai cách xây dựng mô hình Logistic Regression:
+- Cách 1: Tự cài đặt thuật toán bằng NumPy và Gradient Descent.
+- Cách 2: Sử dụng thư viện LogisticRegression của Scikit-learn.
+
+## 2. Dữ liệu
+Sử dụng cùng một tập dữ liệu gồm 20 mẫu, với một đặc trưng đầu vào X và nhãn phân lớp y thuộc hai lớp 0 và 1.
+
+## 3. Phương pháp 1: Tự cài đặt
+- Khởi tạo trọng số ban đầu.
+- Tính xác suất bằng hàm Sigmoid.
+- Cập nhật trọng số bằng Gradient Descent.
+- Sử dụng điều kiện dừng để kết thúc huấn luyện.
+
+File: `main_tu_cai.py`
+
+## 4. Phương pháp 2: Sử dụng thư viện
+- Khởi tạo mô hình LogisticRegression.
+- Sử dụng `model.fit(X, y)` để huấn luyện.
+- Lấy trọng số bằng `model.coef_`.
+- Lấy hệ số bias bằng `model.intercept_`.
+- Dùng `predict()` để dự đoán nhãn và `predict_proba()` để dự đoán xác suất.
+
+File: `main_sklearn.py`
+
+## 5. So sánh
+| Tiêu chí | Tự cài đặt | Scikit-learn |
+|---|---|---|
+| Cách huấn luyện | Tự viết Gradient Descent | Thư viện tự tối ưu |
+| Khởi tạo trọng số | Tự khởi tạo | Thư viện xử lý |
+| Hàm Sigmoid | Tự viết | Thư viện xử lý |
+| Cập nhật trọng số | Tự viết công thức | Thư viện xử lý |
+| Điều chuẩn | Chưa có trong code ban đầu | Mặc định L2 |
+| Ưu điểm | Hiểu rõ nguyên lý thuật toán | Code ngắn gọn, thuận tiện |
+| Nhược điểm | Cần tự xử lý các bước tính toán | Ít thấy chi tiết bên trong thuật toán |
+
+## 6. Kết luận
+Tự cài đặt giúp hiểu rõ nguyên lý hoạt động của Logistic Regression và Gradient Descent. Sử dụng Scikit-learn giúp xây dựng mô hình nhanh hơn và thuận tiện cho các bài toán thực tế.
+
+Lưu ý: Hai phiên bản có thể cho kết quả trọng số khác nhau do cách tối ưu, điều kiện dừng và cơ chế điều chuẩn khác nhau.
